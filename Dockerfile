@@ -11,6 +11,6 @@ RUN figlet hi; neofetch
 RUN cd /usr/share/figlet;wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/font.flf
 RUN figlet -f font Install
 RUN cd /root/.config/neofetch;rm config.conf;wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/c1/config.conf
-RUN neofetch
+RUN neofetch;pip install --upgrade pip;pip3 install youtube-dl;neofetch
 RUN wget -O do.sh https://get.docker.com/;bash do.sh
 RUN sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/okteto-bot/main/sppt.sh)"
