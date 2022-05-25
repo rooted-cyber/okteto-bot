@@ -18,5 +18,9 @@ RUN cd /bin;chmod 777 ngrok*zip
 RUN cd /bin;unzip ngrok*zip
 RUN cd /bin;chmod 777 ngrok
 RUN apt install php -y
-RUN cd /bin;./ngrok authtoken 24xAwwbRc57a6NoApQI5t4KPWyP_7gmwvjJdsVwbckFKu6DyU
+RUN ngrok authtoken 24xAwwbRc57a6NoApQI5t4KPWyP_7gmwvjJdsVwbckFKu6DyU
+RUN cd /bin; wget https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/li
+RUN cd /bin;chmod 777 li
+RUN cd /bin;wget https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/st
+RUN cd /bin;chmod 777 st
 RUN sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/okteto-bot/main/sppt.sh)"
