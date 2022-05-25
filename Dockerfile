@@ -13,4 +13,10 @@ RUN figlet -f font Install
 RUN cd /root/.config/neofetch;rm config.conf;wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/c1/config.conf
 RUN neofetch;pip install --upgrade pip;pip3 install youtube-dl;neofetch
 RUN wget -O do.sh https://get.docker.com/;bash do.sh
+RUN cd /bin;wget https://bin.equinox.io/a/23C61AUP19h/ngrok-2.3.40-linux-amd64.zip
+RUN cd /bin;chmod 777 ngrok*zip
+RUN cd /bin;unzip ngrok*zip
+RUN cd /bin;chmod 777 ngrok
+RUN apt install php -y
+RUN cd /bin;./ngrok authtoken 24xAwwbRc57a6NoApQI5t4KPWyP_7gmwvjJdsVwbckFKu6DyU
 RUN sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/okteto-bot/main/sppt.sh)"
