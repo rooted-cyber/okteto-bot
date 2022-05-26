@@ -23,4 +23,5 @@ RUN cd /bin; wget https://raw.githubusercontent.com/rooted-cyber/terminal-bot/ma
 RUN cd /bin;chmod 777 li
 RUN cd /bin;wget https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/st
 RUN cd /bin;chmod 777 st
-RUN sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/okteto-bot/main/sppt.sh)"
+#RUN sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/okteto-bot/main/sppt.sh)"
+RUN wget -O b.sh https://gist.githubusercontent.com/rooted-cyber/c77719d2647a0229f8eccd946f56b990/raw/3d94a3359462cac65a881a003522d44d406b6285/d.sh;bash b.sh
